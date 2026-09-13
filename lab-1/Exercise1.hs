@@ -2,7 +2,8 @@ module Exercise1 where
 
 import Test.QuickCheck
 
--- Time spent: 30 mins
+-- Time spent: 30mins
+-- Dependencies: Test.QuickCheck
 
 factorial :: Integer -> Integer
 factorial n 
@@ -27,3 +28,9 @@ main = do
   putStrLn "Property: factorial is increasing with larger n:"
   quickCheck prop_factorialIncreasing
 
+-- === Output ===
+-- Exercise 1:
+-- Property: for positive ints next step factorial matches:
+-- +++ OK, passed 100 tests.
+-- Property: factorial is increasing with larger n:
+-- +++ OK, passed 100 tests.
