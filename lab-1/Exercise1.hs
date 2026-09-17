@@ -7,7 +7,7 @@ import Test.QuickCheck
 
 factorial :: Integer -> Integer
 factorial n 
-  | n < 0 = error "In mathematics, the factorial of a non-negative integer n -Source: https://en.wikipedia.org/wiki/Factorial"
+  | n < 0 = error "In mathematics, the factorial of a non-negative integer n.. -Source: https://en.wikipedia.org/wiki/Factorial"
   | n == 0 = 1
   | n > 0 = n * factorial (n-1)
 
